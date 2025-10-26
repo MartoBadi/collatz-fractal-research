@@ -1,28 +1,24 @@
 # 🔍 Collatz Fractal Structure Research
+**Discovery of fractal structure and preferential pathways in the Collatz graph**
 
-**Descubrimiento de estructura fractal y autopistas preferenciales en el grafo de Collatz**
+## 🎯 Description
+This research presents computational evidence of an organized fractal structure within the Collatz function, including:
 
-## 🎯 Descripción
+- **Connected Funnels**: Recurrent points forming highways in the graph
+- **Modular Patterns**: Non-uniform distribution across modular classes
+- **Recurrence Relations**: Precise mathematical patterns between funnels
+- **Fractal Structure**: Self-similar behavior at different scales
 
-Esta investigación revela evidencia computacional de una estructura fractal organizada en la función de Collatz, incluyendo:
+## 📊 Key Findings
+- Identified 24 main funnels with significant frequencies
+- **Connected Chain**: 2734 → 4102 → 6154 → 9232 → ...
+- Non-random modular distribution (predominance of classes 6, 10, 4 mod 16)
+- Detected cyclic connections (7288 → 2734 in 4 steps)
 
-- **Embudos conectados**: Puntos recurrentes que forman autopistas en el grafo
-- **Patrones modulares**: Distribución no uniforme en clases modulares  
-- **Relaciones de recurrencia**: Patrones matemáticos precisos entre embudos
-- **Estructura fractal**: Comportamiento autosimilar a diferentes escalas
-
-## 📊 Hallazgos Principales
-
-- Identificamos 24 embudos principales con frecuencias significativas
-- Cadena conectada: 2734 → 4102 → 6154 → 9232 → ...
-- Distribución modular no aleatoria (predominio clases 6, 10, 4 mod 16)
-- Conexiones cíclicas detectadas (7288 → 2734 en 4 pasos)
-
-## 🚀 Uso Rápido
-
+## 🚀 Quick Start
 ```python
 from src.collatz_analyzer import CollatzInvestigator
 
 investigator = CollatzInvestigator()
-embudos = investigator.identificar_embudos(rango_max=100000)
-conexiones = investigator.analizar_conectividad(embudos)
+funnels = investigator.identify_funnels(max_range=100000)
+connections = investigator.analyze_connectivity(funnels)
