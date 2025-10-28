@@ -19,7 +19,7 @@ n/2 & \text{if } n \equiv 0 \pmod{2} \\
 \end{cases}
 $$
 
-always eventually reaches the cycle $4 \to 2 \to 1 \to 4$. Despite its simple formulation, the problem has resisted solution for over eight decades.
+always eventually reaches the cycle $4\to 2\to1\to4$. Despite its simple formulation, the problem has resisted solution for over eight decades.
 
 Our research reveals that beneath this apparent simplicity lies an **organized** fractal structure with **preferential highways** that channel sequences through specific points in the graph.
 
@@ -29,9 +29,7 @@ Our research reveals that beneath this apparent simplicity lies an **organized**
 
 We implemented a massive verification system that strategically analyzed 8 modular classes:
 
-$$
-C = \{1, 3, 5, 7, 9, 11, 13, 15\}
-$$
+$$C = \{1, 3, 5, 7, 9, 11, 13, 15\}$$
 
 with a total of **31,250 numbers** computationally verified. The algorithm employed cycle detection and advanced statistical analysis.
 
@@ -39,9 +37,7 @@ with a total of **31,250 numbers** computationally verified. The algorithm emplo
 
 We defined a **funnel** as a value that recurrently appears as a local maximum in multiple Collatz sequences. The significance criterion was:
 
-$$
-\text{Frequency} \geq 1\% \text{ of sample size}
-$$
+$$\text{Frequency} \geq 1\% \text{ of sample size}$$
 
 ## 3. Main Results
 
@@ -74,7 +70,7 @@ The connectivity structure reveals a precise mathematical pattern:
 4858 → 7288 (in 2 steps)
 6154 → 9232 (in 2 steps)
 7288 → 2734 (in 4 steps)  # Cyclic connection!
-'''
+```
 ### 3.3 Modular Distribution of Funnels
 
 The distribution of funnels by modular class shows specific patterns:
@@ -98,9 +94,7 @@ The distribution of funnels by modular class shows specific patterns:
 
 The funnels follow a specific mathematical relation. For the main chain:
 
-$$
-a_{n+1} \approx 1.5 \times a_n
-$$
+$$a_{n+1} \approx 1.5 \times a_n$$
 
 with precise alternation between ratios of approximately 1.184 and 1.267.
 
@@ -125,7 +119,7 @@ There exists an infinite set of numbers $\{E_n\}$ in the Collatz graph such that
 **Proof**  
 By verified computational construction:
 
-1. Let $E_1 = 2734$
+1. Let $E_1=2734$
 2. For each $E_n$, applying $f(f(E_n))$ produces $E_{n+1}$ in most cases
 3. Each $E_n$ appears in at least 1% of the analyzed sequences
 4. Connectivity is verified by direct inspection of transitions
@@ -199,7 +193,7 @@ def detect_funnels(max_range, sample):
                     funnels[maximum] += 1
     return {k: v for k, v in funnels.items()
             if v >= sample * 0.01}
-
+```
 ## References
 
 1. Collatz, L. (1937). "On the Origin of the $3n+1$ Problem"
