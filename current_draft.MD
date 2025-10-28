@@ -74,7 +74,7 @@ The connectivity structure reveals a precise mathematical pattern:
 4858 → 7288 (in 2 steps)
 6154 → 9232 (in 2 steps)
 7288 → 2734 (in 4 steps)  # Cyclic connection!
-
+'''
 ### 3.3 Modular Distribution of Funnels
 
 The distribution of funnels by modular class shows specific patterns:
